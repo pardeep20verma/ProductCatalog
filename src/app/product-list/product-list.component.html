@@ -1,0 +1,14 @@
+
+        <div class="list-items">
+            <div class="list-item" *ngFor="let product of productList" >
+          <div class="item-image">
+              <img style="width:100px;height: 100px;" src="../assets/image/{{product.name}}.jpg"
+              onError="this.src='../assets/image/noimage.png';"  alt="..." />
+            </div>
+            <div class="item-name">{{product.name}}</div>
+            <div class="item-price">
+            Price:  {{product.price}} | discount: {{product.discount}}
+            </div>
+            <div >{{product.description}}</div>
+</div>
+</div>
